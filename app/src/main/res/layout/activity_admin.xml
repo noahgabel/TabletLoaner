@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tilbage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/button_back"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edittext_tablet_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Filter by Tablet Brand"
+        android:layout_below="@id/button_back"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edittext_cable_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Filter by Cable Type"
+        android:layout_below="@id/edittext_tablet_brand"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edittext_date_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Filter by Date Interval (yyyy-MM-dd to yyyy-MM-dd)"
+        android:layout_below="@id/edittext_cable_type"
+        android:layout_marginTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="16dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edittext_date_interval" />
+
+</RelativeLayout>

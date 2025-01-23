@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_tablet_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tablet Brand" />
+
+        <TextView
+            android:id="@+id/textview_cable_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cable Type" />
+
+        <TextView
+            android:id="@+id/textview_borrower_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrower Name" />
+
+        <TextView
+            android:id="@+id/textview_contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrower Email" />
+
+        <TextView
+            android:id="@+id/textview_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and Time" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+</LinearLayout>
