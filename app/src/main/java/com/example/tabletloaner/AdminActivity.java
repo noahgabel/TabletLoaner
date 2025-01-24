@@ -29,7 +29,6 @@ public class AdminActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // Enable edge-to-edge display
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_admin);
 
